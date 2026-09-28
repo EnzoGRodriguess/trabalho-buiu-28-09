@@ -6,62 +6,62 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você acaba de cair de um helicóptero no meio de uma ilha deserta, apenas com uma mochila de suprimentos básicos",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "aaaahhhhhhhhhhhhhh",
                 afirmacao: "afirmacao"
             },
             {
-                texto: "Isso é maravilhoso!",
+                texto: "yeeeeeeaaaaaaaahhhh",
                 afirmacao: "afirmacao"
             }           
             
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Após a queda, voce fica com apenas ferimentos leves, então...",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
+                texto:"procuro abrigo",
                 afirmacao:"afirmacao"
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Grito desesperadamente",
                 afirmacao:"afirmacao"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Na caìda da noite, você percebe que a ilha não é tão deserta quanto parecia e começa a ouvir sons nunca antes registrados na mata",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto:"Me escondo em um monte de arvores que foram derrubadas por uma criatura",
                 afirmacao:"afirmacao"
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
-            }
-            
-        ]
-    },
-    {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
-            {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto:"Tento correr para longe do barulho, chamando muita atenção por burrice",
                 afirmacao:"afirmacao"
             }
             
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "De repente o barrulho para e o sons de passos se tornam cada vez maior",
+        alternativas: [
+            {
+                texto:"Tento localizar a criatura",
+                afirmacao:"afirmacao"
+            },
+            {
+                texto:"Pego um pequeno estilete em minha mochila e me preparo para enfrentar o desconhecido",
+                afirmacao:"afirmacao"
+            }
+            
+        ]
+    },
+    {
+        enunciado: "Voce seente um cheiro insuportavel e quando",
         alternativas: [
             {
                 texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
