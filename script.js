@@ -61,14 +61,14 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Voce seente um cheiro insuportavel e quando",
+        enunciado: "Voce seente um cheiro insuportavel e quando menos espera, o inevitavel acontece...",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "aceitar o destino ja definido.",
                 afirmacao:"afirmacao"
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "negar e tentar fazer algo mesmo que seja uma tentativa frustrada.",
                 afirmacao:"afirmacao"
             }
             
@@ -109,7 +109,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Independente das ações tomadas, por mais de mais pensadas que fossem, o destino antes definido não irá mudar";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
