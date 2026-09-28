@@ -6,112 +6,125 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você acaba de cair de um helicóptero no meio de uma ilha deserta, apenas com uma mochila de suprimentos básicos",
+        enunciado: "Você acaba de cair de um helicóptero no meio de uma ilha aparentemente deserta. Apesar da queda, você sofreu apenas alguns ferimentos leves. Com uma mochila de suprimentos básicos, o que você faz primeiro?",
         alternativas: [
             {
-                texto: "aaaahhhhhhhhhhhhhh",
-                afirmacao: "afirmacao"
+                texto: "Procuro um lugar seguro para montar um abrigo.",
+                afirmacao: "Você decide manter a calma e procura um local seguro para passar a noite."
             },
             {
-                texto: "yeeeeeeaaaaaaaahhhh",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Após a queda, voce fica com apenas ferimentos leves, então...",
-        alternativas: [
-            {
-                texto:"procuro abrigo",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto: "Grito desesperadamente",
-                afirmacao:"afirmacao"
+                texto: "Começo a gritar por ajuda.",
+                afirmacao: "Você começa a gritar desesperadamente, esperando que alguém possa ouvir seus pedidos de socorro."
             }
         ]
     },
+
     {
-        enunciado: "Na caìda da noite, você percebe que a ilha não é tão deserta quanto parecia e começa a ouvir sons nunca antes registrados na mata",
+        enunciado: "O sol começa a desaparecer no horizonte. Você percebe que a noite está chegando e ainda não encontrou nenhum sinal de civilização. O que você decide fazer?",
         alternativas: [
             {
-                texto:"Me escondo em um monte de arvores que foram derrubadas por uma criatura",
-                afirmacao:"afirmacao"
+                texto: "Monto um abrigo antes que escureça.",
+                afirmacao: "Você reúne galhos e folhas e começa a construir um abrigo improvisado para passar a noite."
             },
             {
-                texto:"Tento correr para longe do barulho, chamando muita atenção por burrice",
-                afirmacao:"afirmacao"
+                texto: "Exploro a ilha enquanto ainda está claro.",
+                afirmacao: "Você decide explorar a ilha em busca de água, comida ou qualquer sinal de que não está sozinho."
             }
-            
         ]
     },
+
     {
-        enunciado: "De repente o barrulho para e o sons de passos se tornam cada vez maior",
+        enunciado: "A noite finalmente chega. A floresta, que antes parecia silenciosa, começa a produzir sons estranhos. Então você percebe algo assustador: várias árvores foram completamente destruídas, como se uma criatura enorme tivesse passado por ali.",
         alternativas: [
             {
-                texto:"Tento localizar a criatura",
-                afirmacao:"afirmacao"
+                texto: "Me escondo entre as árvores derrubadas e fico em silêncio.",
+                afirmacao: "Você se esconde entre as árvores destruídas e tenta não fazer nenhum barulho."
             },
             {
-                texto:"Pego um pequeno estilete em minha mochila e me preparo para enfrentar o desconhecido",
-                afirmacao:"afirmacao"
+                texto: "Corro para longe dos sons o mais rápido possível.",
+                afirmacao: "Você entra em pânico e começa a correr pela floresta, tentando ficar o mais longe possível daquela criatura."
             }
-            
         ]
     },
+
     {
-        enunciado: "Voce seente um cheiro insuportavel e quando menos espera, o inevitavel acontece...",
+        enunciado: "De repente, todos os sons da floresta param. O silêncio toma conta da ilha. Então você escuta passos cada vez mais próximos. Alguma coisa está vindo em sua direção.",
         alternativas: [
             {
-                texto: "aceitar o destino ja definido.",
-                afirmacao:"afirmacao"
+                texto: "Permaneço escondido e tento descobrir o que é.",
+                afirmacao: "Você permanece imóvel e observa cuidadosamente enquanto os passos se aproximam."
             },
             {
-                texto: "negar e tentar fazer algo mesmo que seja uma tentativa frustrada.",
-                afirmacao:"afirmacao"
+                texto: "Pego o pequeno estilete da mochila e me preparo para enfrentar a criatura.",
+                afirmacao: "Você segura o pequeno estilete com força e se prepara para enfrentar aquilo que está se aproximando."
             }
-            
-            
         ]
     },
+
+    {
+        enunciado: "Um cheiro horrível toma conta do ar. Você sente a presença de alguma coisa muito próxima. Seu coração dispara. Quando finalmente olha para trás, percebe que o inevitável está prestes a acontecer...",
+        alternativas: [
+            {
+                texto: "Aceito que talvez meu destino já esteja definido.",
+                afirmacao: "Você percebe que talvez não exista mais nenhuma saída e decide encarar o destino que está diante de você."
+            },
+            {
+                texto: "Faço alguma coisa, mesmo que pareça impossível escapar.",
+                afirmacao: "Mesmo sabendo que suas chances são pequenas, você decide lutar pela própria sobrevivência até o último instante."
+            }
+        ]
+    }
 ];
 
-let atual = 0; 
+let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if(atual >= perguntas.length){
+    if (atual >= perguntas.length) {
         mostraResultado();
         return;
     }
+
     perguntaAtual = perguntas[atual];
+
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+
     caixaAlternativas.textContent = "";
+
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
+
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+
+        botaoAlternativas.addEventListener("click", () => {
+            respostaSelecionada(alternativa);
+        });
+
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
-function respostaSelecionada(opcaoSelecionada){
+function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacao;
+
     historiaFinal += afirmacoes + " ";
+
     atual++;
+
     mostraPergunta();
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent = "Independente das ações tomadas, por mais de mais pensadas que fossem, o destino antes definido não irá mudar";
+function mostraResultado() {
+    caixaPerguntas.textContent = "Independente das ações tomadas, por mais pensadas que fossem, o destino antes definido não iria mudar...";
+
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
+
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
