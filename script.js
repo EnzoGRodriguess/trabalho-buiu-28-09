@@ -24,11 +24,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Monto um abrigo antes que escureça.",
-                afirmacao: "Você reúne galhos e folhas e começa a construir um abrigo improvisado para passar a noite."
+                afirmacao: "Enquanto o céu escurece, você reúne galhos e folhas e constrói um abrigo improvisado para passar a noite."
             },
             {
                 texto: "Exploro a ilha enquanto ainda está claro.",
-                afirmacao: "Você decide explorar a ilha em busca de água, comida ou qualquer sinal de que não está sozinho."
+                afirmacao: "Com os últimos minutos de luz, você se aventura pela ilha em busca de água, comida ou qualquer sinal de civilização."
             }
         ]
     },
@@ -38,11 +38,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Me escondo entre as árvores derrubadas e fico em silêncio.",
-                afirmacao: "Você se esconde entre as árvores destruídas e tenta não fazer nenhum barulho."
+                afirmacao: "Ao perceber as árvores destruídas, você se esconde entre os troncos e permanece em silêncio, tentando não chamar atenção."
             },
             {
                 texto: "Corro para longe dos sons o mais rápido possível.",
-                afirmacao: "Você entra em pânico e começa a correr pela floresta, tentando ficar o mais longe possível daquela criatura."
+                afirmacao: "Assustado com os sons, você dispara pela floresta sem olhar para trás, tentando se afastar o máximo possível do perigo."
             }
         ]
     },
@@ -52,11 +52,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Permaneço escondido e tento descobrir o que é.",
-                afirmacao: "Você permanece imóvel e observa cuidadosamente enquanto os passos se aproximam."
+                afirmacao: "Escondido entre as árvores, você prende a respiração e observa enquanto os passos ficam cada vez mais próximos."
             },
             {
                 texto: "Pego o pequeno estilete da mochila e me preparo para enfrentar a criatura.",
-                afirmacao: "Você segura o pequeno estilete com força e se prepara para enfrentar aquilo que está se aproximando."
+                afirmacao: "Sem saber o que está por vir, você segura o pequeno estilete e se prepara para enfrentar a criatura."
             }
         ]
     },
@@ -66,11 +66,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Aceito que talvez meu destino já esteja definido.",
-                afirmacao: "Você percebe que talvez não exista mais nenhuma saída e decide encarar o destino que está diante de você."
+                afirmacao: "Diante daquela presença assustadora, você percebe que talvez não exista mais nenhuma saída e se prepara para encarar o que está por vir."
             },
             {
                 texto: "Faço alguma coisa, mesmo que pareça impossível escapar.",
-                afirmacao: "Mesmo sabendo que suas chances são pequenas, você decide lutar pela própria sobrevivência até o último instante."
+                afirmacao: "Mesmo sabendo que suas chances são pequenas, você reúne toda a coragem que ainda possui e decide lutar pela própria sobrevivência."
             }
         ]
     }
